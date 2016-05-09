@@ -17,12 +17,22 @@ shinyUI(
         h3('Your BMI'),
         verbatimTextOutput("bmi"),
         h3('BMI Category'),
-        verbatimTextOutput("label")),
+        verbatimTextOutput("label"),
+        h5('BMI Weight categories:'),
+        h6('1.underweight   (BMI less than 18.5)'),
+        h6('2.normal weight (BMI between 18.5 & 24.9)'),
+        h6('3.overweight    (BMI between 25.0 & 29.9)'),
+        h6('4.obese         (BMI 30.0 and above)')),
         tabPanel('Metric',
         h3('Your BMI'),
         verbatimTextOutput("bmimetric"),
         h3('BMI Category'),
-        verbatimTextOutput("label2"))
+        verbatimTextOutput("label2"),
+        h5('BMI Weight categories:'),
+        h6('1.underweight   (BMI less than 18.5)'),
+        h6('2.normal weight (BMI between 18.5 & 24.9)'),
+        h6('3.overweight    (BMI between 25.0 & 29.9)'),
+        h6('4.obese         (BMI 30.0 and above)'))
     )
   )
 ))
